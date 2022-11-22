@@ -1,15 +1,27 @@
 # MercadoLibre Fingerprint
 
-A new Flutter plugin project.
+Plugin to get all the device's fingerprint information.
 
-## Getting Started
+In order to get all the device's fingerprint information that MercadoLibre needs to tokenize cards (https://www.mercadopago.cl/developers/es/docs/checkout-pro/how-tos/payment-approval) you can get this information for both Android and IOS.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:mercadolibre_fingerprint/mercadolibre_fingerprint.dart';
 
+
+# returns json fingerprint device information
+MercadolibreFingerprint().getDeviceInfoAsJsonString();
+
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
